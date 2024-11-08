@@ -73,15 +73,15 @@ function Page() {
                     <div className="tab_content_wrap mt-6">
                         {activeTab === 'tabOne' && (
                             <div className="tab_one_content">
-                                {/*For large device*/}
                                 <div
-                                    className="hidden md:flex items-center justify-center gap-6 bg-white py-6 px-8 rounded">
-                                    <div className="book_image">
-                                        <Image src={tabBookImg} className="w-[150px]" alt="tabBookImg"/>
+                                    className="block md:flex items-center justify-center gap-6 bg-white py-6 px-8 rounded">
+                                    <div className="book_image flex items-center gap-2 md:block">
+                                        <Image src={tabBookImg} className="w-[40px] md:w-[150px]" alt="tabBookImg"/>
+                                        <h4 className="block md:hidden text-[18px] font-semibold">Content One</h4>
                                     </div>
                                     <div className="book_content">
-                                        <h4 className="text-[18px] font-semibold">Content One</h4>
-                                        <p className="mt-2 text-[16px]">
+                                        <h4 className="hidden md:block text-[18px] font-semibold">Content One</h4>
+                                        <p className="mt-2 ml-2 md:ml-0 text-[16px]">
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
                                             consequatur consequuntur deleniti ducimus hic ipsum magni minus nisi, porro
                                             provident reprehenderit suscipit veniam, vero, voluptates.
@@ -89,34 +89,19 @@ function Page() {
                                     </div>
                                 </div>
 
-                                {/*For mobile device*/}
-                                <div className="bg-white py-6 px-8 rounded block md:hidden">
-                                    <div className="book_image flex items-center gap-3">
-                                        <Image src={tabBookImg} className="w-[30px]" alt="tabBookImg"/>
-                                        <h4 className="text-[18px] font-semibold">Content One</h4>
-                                    </div>
-                                    <div className="book_content">
-                                        <p className="mt-2 text-[16px]">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-                                            consequatur consequuntur deleniti ducimus hic ipsum magni minus nisi, porro
-                                            provident reprehenderit suscipit veniam, vero, voluptates.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                {/*Tab Table*/}
-                                <div className="overflow-x-auto bg-white py-6 px-8 rounded mt-6">
+                                {/*Tab Table Desktop*/}
+                                <div className="hidden md:block overflow-x-auto bg-white py-6 px-8 rounded mt-6">
                                     <table className="min-w-full border-collapse border-b border-gray-300">
                                         <thead>
                                         <tr>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal">
-                                                Column
+                                                Lorem
                                             </th>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal">
-                                                Column
+                                                Lorem Ipsum
                                             </th>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal">
-                                                Column
+                                                Lorem 1
                                             </th>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal"></th>
                                         </tr>
@@ -124,53 +109,7 @@ function Page() {
                                         <tbody>
                                         <tr>
                                             <td className="px-4 py-2 border-b border-gray-300 font-semibold">
-                                                Row 1
-                                            </td>
-                                            <td className="px-4 py-2 border-b border-gray-300">November 7, 2024</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">Thursday</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">
-                                                <div className="flex items-center justify-center gap-4">
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Ipsum
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="px-4 py-2 border-b border-gray-300 font-semibold">
-                                                Row 1
-                                            </td>
-                                            <td className="px-4 py-2 border-b border-gray-300">November 7, 2024</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">Thursday</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">
-                                                <div className="flex items-center justify-center gap-4">
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Ipsum
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="px-4 py-2 border-b border-gray-300 font-semibold">
-                                                Row 1
+                                                Lorem
                                             </td>
                                             <td className="px-4 py-2 border-b border-gray-300">November 7, 2024</td>
                                             <td className="px-4 py-2 border-b border-gray-300">Thursday</td>
@@ -193,20 +132,89 @@ function Page() {
                                         </tr>
                                         </tbody>
                                     </table>
+                                </div>
+
+                                {/*Tab Table Mobile*/}
+                                <div className="block md:hidden bg-white py-6 px-8 rounded mt-6">
+                                    <div className="border-b-2 pb-2">
+                                        <h4 className="font-semibold text-[16px]">Lorem 1</h4>
+                                        <div className="flex items-center justify-between gap-2 mt-2 text-[14px]">
+                                            <h4>November 7, 2024</h4>
+                                            <h4>Thursday</h4>
+                                        </div>
+                                        <div className="flex items-center justify-center gap-4 mt-4">
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Ipsum
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                        </div>
+                                    </div>
+
+                                    <div className="border-b-2 pb-2 mt-3">
+                                        <h4 className="font-semibold text-[16px]">Lorem 1</h4>
+                                        <div className="flex items-center justify-between gap-2 mt-2 text-[14px]">
+                                            <h4>November 7, 2024</h4>
+                                            <h4>Thursday</h4>
+                                        </div>
+                                        <div className="flex items-center justify-center gap-4 mt-4">
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Ipsum
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                        </div>
+                                    </div>
+
+                                    <div className="border-b-2 pb-2 mt-3">
+                                        <h4 className="font-semibold text-[16px]">Lorem 1</h4>
+                                        <div className="flex items-center justify-between gap-2 mt-2 text-[14px]">
+                                            <h4>November 7, 2024</h4>
+                                            <h4>Thursday</h4>
+                                        </div>
+                                        <div className="flex items-center justify-center gap-4 mt-4">
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Ipsum
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         )}
                         {activeTab === 'tabTwo' && (
-                            <div className="tab_one_content">
-                                {/*For large device*/}
+                            <div className="tab_two_content">
                                 <div
-                                    className="hidden md:flex items-center justify-center gap-6 bg-white py-6 px-8 rounded">
-                                    <div className="book_image">
-                                        <Image src={tabBookImg} className="w-[150px]" alt="tabBookImg"/>
+                                    className="block md:flex items-center justify-center gap-6 bg-white py-6 px-8 rounded">
+                                    <div className="book_image flex items-center gap-2 md:block">
+                                        <Image src={tabBookImg} className="w-[40px] md:w-[150px]" alt="tabBookImg"/>
+                                        <h4 className="block md:hidden text-[18px] font-semibold">Content Two</h4>
                                     </div>
                                     <div className="book_content">
-                                        <h4 className="text-[18px] font-semibold">Content Two</h4>
-                                        <p className="mt-2 text-[16px]">
+                                        <h4 className="hidden md:block text-[18px] font-semibold">Content Two</h4>
+                                        <p className="mt-2 ml-2 md:ml-0 text-[16px]">
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
                                             consequatur consequuntur deleniti ducimus hic ipsum magni minus nisi, porro
                                             provident reprehenderit suscipit veniam, vero, voluptates.
@@ -214,34 +222,19 @@ function Page() {
                                     </div>
                                 </div>
 
-                                {/*For mobile device*/}
-                                <div className="bg-white py-6 px-8 rounded block md:hidden">
-                                    <div className="book_image flex items-center gap-3">
-                                        <Image src={tabBookImg} className="w-[30px]" alt="tabBookImg"/>
-                                        <h4 className="text-[18px] font-semibold">Content One</h4>
-                                    </div>
-                                    <div className="book_content">
-                                        <p className="mt-2 text-[16px]">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-                                            consequatur consequuntur deleniti ducimus hic ipsum magni minus nisi, porro
-                                            provident reprehenderit suscipit veniam, vero, voluptates.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                {/*Tab Table*/}
-                                <div className="overflow-x-auto bg-white py-6 px-8 rounded mt-6">
+                                {/*Tab Table Desktop*/}
+                                <div className="hidden md:block overflow-x-auto bg-white py-6 px-8 rounded mt-6">
                                     <table className="min-w-full border-collapse border-b border-gray-300">
                                         <thead>
                                         <tr>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal">
-                                                Column
+                                                Lorem
                                             </th>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal">
-                                                Column
+                                                Lorem Ipsum
                                             </th>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal">
-                                                Column
+                                                Lorem 2
                                             </th>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal"></th>
                                         </tr>
@@ -249,53 +242,7 @@ function Page() {
                                         <tbody>
                                         <tr>
                                             <td className="px-4 py-2 border-b border-gray-300 font-semibold">
-                                                Row 1
-                                            </td>
-                                            <td className="px-4 py-2 border-b border-gray-300">November 7, 2024</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">Thursday</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">
-                                                <div className="flex items-center justify-center gap-4">
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Ipsum
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="px-4 py-2 border-b border-gray-300 font-semibold">
-                                                Row 1
-                                            </td>
-                                            <td className="px-4 py-2 border-b border-gray-300">November 7, 2024</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">Thursday</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">
-                                                <div className="flex items-center justify-center gap-4">
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Ipsum
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="px-4 py-2 border-b border-gray-300 font-semibold">
-                                                Row 1
+                                                Lorem
                                             </td>
                                             <td className="px-4 py-2 border-b border-gray-300">November 7, 2024</td>
                                             <td className="px-4 py-2 border-b border-gray-300">Thursday</td>
@@ -318,20 +265,89 @@ function Page() {
                                         </tr>
                                         </tbody>
                                     </table>
+                                </div>
+
+                                {/*Tab Table Mobile*/}
+                                <div className="block md:hidden bg-white py-6 px-8 rounded mt-6">
+                                    <div className="border-b-2 pb-2">
+                                        <h4 className="font-semibold text-[16px]">Lorem 2</h4>
+                                        <div className="flex items-center justify-between gap-2 mt-2 text-[14px]">
+                                            <h4>November 7, 2024</h4>
+                                            <h4>Thursday</h4>
+                                        </div>
+                                        <div className="flex items-center justify-center gap-4 mt-4">
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Ipsum
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                        </div>
+                                    </div>
+
+                                    <div className="border-b-2 pb-2 mt-3">
+                                        <h4 className="font-semibold text-[16px]">Lorem 2</h4>
+                                        <div className="flex items-center justify-between gap-2 mt-2 text-[14px]">
+                                            <h4>November 7, 2024</h4>
+                                            <h4>Thursday</h4>
+                                        </div>
+                                        <div className="flex items-center justify-center gap-4 mt-4">
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Ipsum
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                        </div>
+                                    </div>
+
+                                    <div className="border-b-2 pb-2 mt-3">
+                                        <h4 className="font-semibold text-[16px]">Lorem 2</h4>
+                                        <div className="flex items-center justify-between gap-2 mt-2 text-[14px]">
+                                            <h4>November 7, 2024</h4>
+                                            <h4>Thursday</h4>
+                                        </div>
+                                        <div className="flex items-center justify-center gap-4 mt-4">
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Ipsum
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         )}
                         {activeTab === 'tabThree' && (
-                            <div className="tab_one_content">
-                                {/*For large device*/}
+                            <div className="tab_three_content">
                                 <div
-                                    className="hidden md:flex items-center justify-center gap-6 bg-white py-6 px-8 rounded">
-                                    <div className="book_image">
-                                        <Image src={tabBookImg} className="w-[150px]" alt="tabBookImg"/>
+                                    className="block md:flex items-center justify-center gap-6 bg-white py-6 px-8 rounded">
+                                    <div className="book_image flex items-center gap-2 md:block">
+                                        <Image src={tabBookImg} className="w-[40px] md:w-[150px]" alt="tabBookImg"/>
+                                        <h4 className="block md:hidden text-[18px] font-semibold">Content Three</h4>
                                     </div>
                                     <div className="book_content">
-                                        <h4 className="text-[18px] font-semibold">Content Three</h4>
-                                        <p className="mt-2 text-[16px]">
+                                        <h4 className="hidden md:block text-[18px] font-semibold">Content Three</h4>
+                                        <p className="mt-2 ml-2 md:ml-0 text-[16px]">
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
                                             consequatur consequuntur deleniti ducimus hic ipsum magni minus nisi, porro
                                             provident reprehenderit suscipit veniam, vero, voluptates.
@@ -339,34 +355,19 @@ function Page() {
                                     </div>
                                 </div>
 
-                                {/*For mobile device*/}
-                                <div className="bg-white py-6 px-8 rounded block md:hidden">
-                                    <div className="book_image flex items-center gap-3">
-                                        <Image src={tabBookImg} className="w-[30px]" alt="tabBookImg"/>
-                                        <h4 className="text-[18px] font-semibold">Content One</h4>
-                                    </div>
-                                    <div className="book_content">
-                                        <p className="mt-2 text-[16px]">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-                                            consequatur consequuntur deleniti ducimus hic ipsum magni minus nisi, porro
-                                            provident reprehenderit suscipit veniam, vero, voluptates.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                {/*Tab Table*/}
-                                <div className="overflow-x-auto bg-white py-6 px-8 rounded mt-6">
+                                {/*Tab Table Desktop*/}
+                                <div className="hidden md:block overflow-x-auto bg-white py-6 px-8 rounded mt-6">
                                     <table className="min-w-full border-collapse border-b border-gray-300">
                                         <thead>
                                         <tr>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal">
-                                                Column
+                                                Lorem
                                             </th>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal">
-                                                Column
+                                                Lorem Ipsum
                                             </th>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal">
-                                                Column
+                                                Lorem 3
                                             </th>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal"></th>
                                         </tr>
@@ -374,53 +375,7 @@ function Page() {
                                         <tbody>
                                         <tr>
                                             <td className="px-4 py-2 border-b border-gray-300 font-semibold">
-                                                Row 1
-                                            </td>
-                                            <td className="px-4 py-2 border-b border-gray-300">November 7, 2024</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">Thursday</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">
-                                                <div className="flex items-center justify-center gap-4">
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Ipsum
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="px-4 py-2 border-b border-gray-300 font-semibold">
-                                                Row 1
-                                            </td>
-                                            <td className="px-4 py-2 border-b border-gray-300">November 7, 2024</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">Thursday</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">
-                                                <div className="flex items-center justify-center gap-4">
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Ipsum
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="px-4 py-2 border-b border-gray-300 font-semibold">
-                                                Row 1
+                                                Lorem
                                             </td>
                                             <td className="px-4 py-2 border-b border-gray-300">November 7, 2024</td>
                                             <td className="px-4 py-2 border-b border-gray-300">Thursday</td>
@@ -443,20 +398,89 @@ function Page() {
                                         </tr>
                                         </tbody>
                                     </table>
+                                </div>
+
+                                {/*Tab Table Mobile*/}
+                                <div className="block md:hidden bg-white py-6 px-8 rounded mt-6">
+                                    <div className="border-b-2 pb-2">
+                                        <h4 className="font-semibold text-[16px]">Lorem 3</h4>
+                                        <div className="flex items-center justify-between gap-2 mt-2 text-[14px]">
+                                            <h4>November 7, 2024</h4>
+                                            <h4>Thursday</h4>
+                                        </div>
+                                        <div className="flex items-center justify-center gap-4 mt-4">
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Ipsum
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                        </div>
+                                    </div>
+
+                                    <div className="border-b-2 pb-2 mt-3">
+                                        <h4 className="font-semibold text-[16px]">Lorem 3</h4>
+                                        <div className="flex items-center justify-between gap-2 mt-2 text-[14px]">
+                                            <h4>November 7, 2024</h4>
+                                            <h4>Thursday</h4>
+                                        </div>
+                                        <div className="flex items-center justify-center gap-4 mt-4">
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Ipsum
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                        </div>
+                                    </div>
+
+                                    <div className="border-b-2 pb-2 mt-3">
+                                        <h4 className="font-semibold text-[16px]">Lorem 3</h4>
+                                        <div className="flex items-center justify-between gap-2 mt-2 text-[14px]">
+                                            <h4>November 7, 2024</h4>
+                                            <h4>Thursday</h4>
+                                        </div>
+                                        <div className="flex items-center justify-center gap-4 mt-4">
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Ipsum
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         )}
                         {activeTab === 'tabFour' && (
-                            <div className="tab_one_content">
-                                {/*For large device*/}
+                            <div className="tab_four_content">
                                 <div
-                                    className="hidden md:flex items-center justify-center gap-6 bg-white py-6 px-8 rounded">
-                                    <div className="book_image">
-                                        <Image src={tabBookImg} className="w-[150px]" alt="tabBookImg"/>
+                                    className="block md:flex items-center justify-center gap-6 bg-white py-6 px-8 rounded">
+                                    <div className="book_image flex items-center gap-2 md:block">
+                                        <Image src={tabBookImg} className="w-[40px] md:w-[150px]" alt="tabBookImg"/>
+                                        <h4 className="block md:hidden text-[18px] font-semibold">Content Four</h4>
                                     </div>
                                     <div className="book_content">
-                                        <h4 className="text-[18px] font-semibold">Content Four</h4>
-                                        <p className="mt-2 text-[16px]">
+                                        <h4 className="hidden md:block text-[18px] font-semibold">Content Four</h4>
+                                        <p className="mt-2 ml-2 md:ml-0 text-[16px]">
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
                                             consequatur consequuntur deleniti ducimus hic ipsum magni minus nisi, porro
                                             provident reprehenderit suscipit veniam, vero, voluptates.
@@ -464,34 +488,19 @@ function Page() {
                                     </div>
                                 </div>
 
-                                {/*For mobile device*/}
-                                <div className="bg-white py-6 px-8 rounded block md:hidden">
-                                    <div className="book_image flex items-center gap-3">
-                                        <Image src={tabBookImg} className="w-[30px]" alt="tabBookImg"/>
-                                        <h4 className="text-[18px] font-semibold">Content One</h4>
-                                    </div>
-                                    <div className="book_content">
-                                        <p className="mt-2 text-[16px]">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-                                            consequatur consequuntur deleniti ducimus hic ipsum magni minus nisi, porro
-                                            provident reprehenderit suscipit veniam, vero, voluptates.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                {/*Tab Table*/}
-                                <div className="overflow-x-auto bg-white py-6 px-8 rounded mt-6">
+                                {/*Tab Table Desktop*/}
+                                <div className="hidden md:block overflow-x-auto bg-white py-6 px-8 rounded mt-6">
                                     <table className="min-w-full border-collapse border-b border-gray-300">
                                         <thead>
                                         <tr>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal">
-                                                Column
+                                                Lorem
                                             </th>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal">
-                                                Column
+                                                Lorem Ipsum
                                             </th>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal">
-                                                Column
+                                                Lorem 3
                                             </th>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal"></th>
                                         </tr>
@@ -499,53 +508,7 @@ function Page() {
                                         <tbody>
                                         <tr>
                                             <td className="px-4 py-2 border-b border-gray-300 font-semibold">
-                                                Row 1
-                                            </td>
-                                            <td className="px-4 py-2 border-b border-gray-300">November 7, 2024</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">Thursday</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">
-                                                <div className="flex items-center justify-center gap-4">
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Ipsum
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="px-4 py-2 border-b border-gray-300 font-semibold">
-                                                Row 1
-                                            </td>
-                                            <td className="px-4 py-2 border-b border-gray-300">November 7, 2024</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">Thursday</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">
-                                                <div className="flex items-center justify-center gap-4">
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Ipsum
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="px-4 py-2 border-b border-gray-300 font-semibold">
-                                                Row 1
+                                                Lorem
                                             </td>
                                             <td className="px-4 py-2 border-b border-gray-300">November 7, 2024</td>
                                             <td className="px-4 py-2 border-b border-gray-300">Thursday</td>
@@ -568,20 +531,89 @@ function Page() {
                                         </tr>
                                         </tbody>
                                     </table>
+                                </div>
+
+                                {/*Tab Table Mobile*/}
+                                <div className="block md:hidden bg-white py-6 px-8 rounded mt-6">
+                                    <div className="border-b-2 pb-2">
+                                        <h4 className="font-semibold text-[16px]">Lorem 4</h4>
+                                        <div className="flex items-center justify-between gap-2 mt-2 text-[14px]">
+                                            <h4>November 7, 2024</h4>
+                                            <h4>Thursday</h4>
+                                        </div>
+                                        <div className="flex items-center justify-center gap-4 mt-4">
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Ipsum
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                        </div>
+                                    </div>
+
+                                    <div className="border-b-2 pb-2 mt-3">
+                                        <h4 className="font-semibold text-[16px]">Lorem 4</h4>
+                                        <div className="flex items-center justify-between gap-2 mt-2 text-[14px]">
+                                            <h4>November 7, 2024</h4>
+                                            <h4>Thursday</h4>
+                                        </div>
+                                        <div className="flex items-center justify-center gap-4 mt-4">
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Ipsum
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                        </div>
+                                    </div>
+
+                                    <div className="border-b-2 pb-2 mt-3">
+                                        <h4 className="font-semibold text-[16px]">Lorem 4</h4>
+                                        <div className="flex items-center justify-between gap-2 mt-2 text-[14px]">
+                                            <h4>November 7, 2024</h4>
+                                            <h4>Thursday</h4>
+                                        </div>
+                                        <div className="flex items-center justify-center gap-4 mt-4">
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Ipsum
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         )}
                         {activeTab === 'tabFive' && (
-                            <div className="tab_one_content">
-                                {/*For large device*/}
+                            <div className="tab_five_content">
                                 <div
-                                    className="hidden md:flex items-center justify-center gap-6 bg-white py-6 px-8 rounded">
-                                    <div className="book_image">
-                                        <Image src={tabBookImg} className="w-[150px]" alt="tabBookImg"/>
+                                    className="block md:flex items-center justify-center gap-6 bg-white py-6 px-8 rounded">
+                                    <div className="book_image flex items-center gap-2 md:block">
+                                        <Image src={tabBookImg} className="w-[40px] md:w-[150px]" alt="tabBookImg"/>
+                                        <h4 className="block md:hidden text-[18px] font-semibold">Content Five</h4>
                                     </div>
                                     <div className="book_content">
-                                        <h4 className="text-[18px] font-semibold">Content Five</h4>
-                                        <p className="mt-2 text-[16px]">
+                                        <h4 className="hidden md:block text-[18px] font-semibold">Content Five</h4>
+                                        <p className="mt-2 ml-2 md:ml-0 text-[16px]">
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
                                             consequatur consequuntur deleniti ducimus hic ipsum magni minus nisi, porro
                                             provident reprehenderit suscipit veniam, vero, voluptates.
@@ -589,34 +621,19 @@ function Page() {
                                     </div>
                                 </div>
 
-                                {/*For mobile device*/}
-                                <div className="bg-white py-6 px-8 rounded block md:hidden">
-                                    <div className="book_image flex items-center gap-3">
-                                        <Image src={tabBookImg} className="w-[30px]" alt="tabBookImg"/>
-                                        <h4 className="text-[18px] font-semibold">Content One</h4>
-                                    </div>
-                                    <div className="book_content">
-                                        <p className="mt-2 text-[16px]">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-                                            consequatur consequuntur deleniti ducimus hic ipsum magni minus nisi, porro
-                                            provident reprehenderit suscipit veniam, vero, voluptates.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                {/*Tab Table*/}
-                                <div className="overflow-x-auto bg-white py-6 px-8 rounded mt-6">
+                                {/*Tab Table Desktop*/}
+                                <div className="hidden md:block overflow-x-auto bg-white py-6 px-8 rounded mt-6">
                                     <table className="min-w-full border-collapse border-b border-gray-300">
                                         <thead>
                                         <tr>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal">
-                                                Column
+                                                Lorem
                                             </th>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal">
-                                                Column
+                                                Lorem Ipsum
                                             </th>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal">
-                                                Column
+                                                Lorem 5
                                             </th>
                                             <th className="px-4 py-2 text-left border-b border-gray-300 font-normal"></th>
                                         </tr>
@@ -624,53 +641,7 @@ function Page() {
                                         <tbody>
                                         <tr>
                                             <td className="px-4 py-2 border-b border-gray-300 font-semibold">
-                                                Row 1
-                                            </td>
-                                            <td className="px-4 py-2 border-b border-gray-300">November 7, 2024</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">Thursday</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">
-                                                <div className="flex items-center justify-center gap-4">
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Ipsum
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="px-4 py-2 border-b border-gray-300 font-semibold">
-                                                Row 1
-                                            </td>
-                                            <td className="px-4 py-2 border-b border-gray-300">November 7, 2024</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">Thursday</td>
-                                            <td className="px-4 py-2 border-b border-gray-300">
-                                                <div className="flex items-center justify-center gap-4">
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Ipsum
-                                                    </Link>
-                                                    <Link href='/one'
-                                                          className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
-                                                        Lorem
-                                                    </Link>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td className="px-4 py-2 border-b border-gray-300 font-semibold">
-                                                Row 1
+                                                Lorem
                                             </td>
                                             <td className="px-4 py-2 border-b border-gray-300">November 7, 2024</td>
                                             <td className="px-4 py-2 border-b border-gray-300">Thursday</td>
@@ -693,6 +664,75 @@ function Page() {
                                         </tr>
                                         </tbody>
                                     </table>
+                                </div>
+
+                                {/*Tab Table Mobile*/}
+                                <div className="block md:hidden bg-white py-6 px-8 rounded mt-6">
+                                    <div className="border-b-2 pb-2">
+                                        <h4 className="font-semibold text-[16px]">Lorem 5</h4>
+                                        <div className="flex items-center justify-between gap-2 mt-2 text-[14px]">
+                                            <h4>November 7, 2024</h4>
+                                            <h4>Thursday</h4>
+                                        </div>
+                                        <div className="flex items-center justify-center gap-4 mt-4">
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Ipsum
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                        </div>
+                                    </div>
+
+                                    <div className="border-b-2 pb-2 mt-3">
+                                        <h4 className="font-semibold text-[16px]">Lorem 5</h4>
+                                        <div className="flex items-center justify-between gap-2 mt-2 text-[14px]">
+                                            <h4>November 7, 2024</h4>
+                                            <h4>Thursday</h4>
+                                        </div>
+                                        <div className="flex items-center justify-center gap-4 mt-4">
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Ipsum
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                        </div>
+                                    </div>
+
+                                    <div className="border-b-2 pb-2 mt-3">
+                                        <h4 className="font-semibold text-[16px]">Lorem 5</h4>
+                                        <div className="flex items-center justify-between gap-2 mt-2 text-[14px]">
+                                            <h4>November 7, 2024</h4>
+                                            <h4>Thursday</h4>
+                                        </div>
+                                        <div className="flex items-center justify-center gap-4 mt-4">
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Ipsum
+                                            </Link>
+                                            <Link href='/one'
+                                                  className="py-1 px-4 rounded text-[14px] font-semibold bg-white text-black border border-black hover:bg-black hover:text-white transition">
+                                                Lorem
+                                            </Link>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         )}
